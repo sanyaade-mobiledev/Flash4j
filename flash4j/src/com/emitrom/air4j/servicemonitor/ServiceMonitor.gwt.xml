@@ -1,0 +1,4 @@
+<module>
+	<inherits name="com.emitrom.gwt4.air.core.Core"/>
+	 <script src="servicemonitor.swf"/> 
+</module>

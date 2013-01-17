@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+================================================================================
+#  Copyright (c) 2011-2012 Emitrom, LLC
+#  All rights reserved.
+#
+#  build.xml file to build Flash4j 
+================================================================================
+-->
+<project basedir="." name="flash4j" default="gwtc">
+    <!-- Handy for nightly builds -->
+    <tstamp>
+        <format property="timestamp" pattern="yyyyMMddHHmm" locale="en"/>
+    </tstamp>
+    
+    <!-- Define the basedir explicitly if we want to import this file -->
+    <dirname property="base.dir" file="${ant.file}" />
+        
+    <!-- Load build.properties and overwrite any properties set above -->
+    <property file="${base.dir}/build.properties" />
+	
+	<!-- Miscelaneous properties -->
+	<property name="flash4j.class.name" value="com.emitrom.flash4j.core.Core"/>
+	<property name="src.dir" value="${base.dir}/src/com/emitrom/flash4j" />
+	<property name="lib.dir" value="${base.dir}/lib" />
+	<property name="build.dir" value="${base.dir}/build" />
+	<property name="war.dir" value="${base.dir}/war" />
+	<property name="release.dir" value="${base.dir}/release" />
+	<property name="stage.dir" value="${base.dir}/stage" />
+	<!--property name="install.file" value="INSTALL" /-->
+	<!--property name="license.file" value="LICENSE" /-->
+
+	<!-- Classpath -->
+    <path id="flash4j.classpath">
+    	<pathelement location="${src.dir}" />
+    	<pathelement location="${build.dir}" />
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+    </path>
+
+	<!-- Clean -->
+	<target name="clean" description="Deletes the build directory">
+		<echo message="Deleting ${flash4j.output.dir}" />
+		<delete dir="${flash4j.output.dir}"/>
+		
+		<echo message="Deleting ${build.dir}" />
+		<delete dir="${build.dir}"/>
+		
+		<echo message="Deleting ${stage.dir}" />
+		<delete dir="${stage.dir}" />
+	</target>
+
+    <!-- Prepare build directories -->
+    <target name="prepare">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${release.dir}" />
+    </target>
+	
+	<!-- Compiles the linker class -->
+    <target name="javac" depends="prepare" description="Compile Java source">
+        <mkdir dir="${build.dir}/classes"/>
+        
+        <javac srcdir="${src.dir}" includes="**" encoding="utf-8"
+            destdir="${build.dir}/classes"
+        	source="1.6" target="1.6" nowarn="true"
+            debug="true" debuglevel="lines,vars,source">            
+          <classpath refid="flash4j.classpath"/>
+        </javac>
+    	
+		<copy todir="${build.dir}/classes/com/emitrom/flash4j/">
+			<fileset dir="${src.dir}">
+				<filename name="Gwt4Flex.gwt.xml"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dir}/classes/com/emitrom/gwt4/flex">
+			<fileset dir="${src.dir}"/>
+		</copy>
+	</target>
+	
+	<!-- Build Jar -->
+	<target name="build-flash" depends="javac" description="Creates the GWT4Flex Jar">
+		<jar destfile="${build.dir}/${ant.project.name}-${version}-${timestamp}.jar">
+			<fileset dir="${build.dir}/classes"/>
+		</jar>		
+	</target>
+
+	<!-- GWTC -->
+    <target name="gwtc" depends="javac" description="Compiles Java into Javascript using the GWT compiler.">
+        <echo message="Compiling GWT4Flex source to javascript, to ${flash4j.output.dir}" level="info" />
+        <java classpathref="flash4j.classpath" 
+              classname="com.google.gwt.dev.Compiler" 
+              fork="true" 
+              failonerror="true"
+              maxmemory="1024m">
+            <arg value="-logLevel" />
+            <arg value="${gwt.log.level}" />
+            <arg value="-style" />
+            <arg value="${gwt.code.style}" />
+            <arg value="-war"/>
+            <arg file="${flash4j.output.dir}"/>
+        	<arg value="${flash4j.class.name}" />
+        </java>
+    </target>	
+	
+	<!-- Stage -->
+	<target name="stage" depends="clean, prepare, build-flash" description="Stages files for release">
+        <copy file="${build.dir}/${ant.project.name}-${version}-${timestamp}.jar" tofile="${stage.dir}/${ant.project.name}-${version}.jar" />
+        <!--copy file="${install.file}" tofile="${stage.dir}/${install.file}" />
+        <copy file="${license.file}" tofile="${stage.dir}/${license.file}" />
+        <copy todir="${stage.dir}/flex4j/4.6">
+        	<fileset dir="${war.dir}/flex4j/4.6" includes="*.*" />
+        </copy-->
+	</target>
+	
+	<!-- Release -->
+	<target name="release" depends="stage" description="Creates the Flash4j zip file that can be released.">
+		<zip destfile="${release.dir}/${ant.project.name}-${version}.zip" basedir="${stage.dir}" excludes="*.zip" />
+	</target>
+</project>

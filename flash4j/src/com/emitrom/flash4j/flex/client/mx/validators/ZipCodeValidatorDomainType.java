@@ -1,0 +1,58 @@
+/************************************************************************
+  ZipCodeValidatorDomainType.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+**************************************************************************/
+package com.emitrom.flash4j.flex.client.mx.validators;
+
+/**
+ * The Enum ZipCodeValidatorDomainType.
+ */
+public enum ZipCodeValidatorDomainType {
+
+    /** The CANAD a_ only. */
+    CANADA_ONLY("Canada Only"),
+    /** The U s_ only. */
+    US_ONLY("US Only"),
+    /** The U s_ o r_ canada. */
+    US_OR_CANADA("US or Canada");
+
+    /** The value. */
+    public final String value;
+
+    /**
+     * Instantiates a new zip code validator domain type.
+     * 
+     * @param type the type
+     */
+    private ZipCodeValidatorDomainType(String type) {
+        value = type;
+    }
+
+    /**
+     * From value.
+     * 
+     * @param value the value
+     * @return the zip code validator domain type
+     */
+    public static native ZipCodeValidatorDomainType fromValue(String value) /*-{
+		switch (value) {
+		case 'Canada Only':
+			return @com.emitrom.flash4j.flex.client.mx.validators.ZipCodeValidatorDomainType::CANADA_ONLY;
+		case 'US Only':
+			return @com.emitrom.flash4j.flex.client.mx.validators.ZipCodeValidatorDomainType::US_ONLY;
+		case 'US or Canada':
+			return @com.emitrom.flash4j.flex.client.mx.validators.ZipCodeValidatorDomainType::US_OR_CANADA;
+		}
+    }-*/;
+}

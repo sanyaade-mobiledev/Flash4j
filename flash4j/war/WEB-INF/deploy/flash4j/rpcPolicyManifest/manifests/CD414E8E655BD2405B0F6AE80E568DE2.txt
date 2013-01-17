@@ -1,0 +1,2 @@
+serviceClass: com.emitrom.flash4j.app.client.GreetingService
+path: D8E493A4394915DBB3C3FB56EE5A0B52.gwt.rpc

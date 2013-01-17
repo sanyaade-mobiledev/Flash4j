@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <inherits name='com.emitrom.flash4j.core.Core'/>
+  <script src="4.6/advancedgrids_4.6.0.23201.swf"/> 
+  <script src="4.6/charts_4.6.0.23201.swf"/> 
+  <script src="4.6/FlexGWT.swf"/> 
+  <script src="4.6/framework_4.6.0.23201.swf"/> 
+  <script src="4.6/mx_4.6.0.23201.swf"/> 
+  <script src="4.6/osmf_1.0.0.16316.swf"/> 
+  <script src="4.6/osmf_flex.4.0.0.13495.swf"/> 
+  <script src="4.6/rpc_4.6.0.23201.swf"/> 
+  <script src="4.6/sparkskins_4.1.0.16076.swf"/> 
+  <script src="4.6/textLayout_2.0.0.232.swf"/> 
+</module>
