@@ -1,8 +1,6 @@
-# [Flash4j](http://www.emitrom.com/flex4j) 
+# [Flash4j](http://www.emitrom.com/flex4j)  3.0.0 was released.
 
-=================
-# Flash4j 3.0.0 was released.
-=================
+
 
 Flash4j provides a simple and intuitive API for the Flash Platform.
 
