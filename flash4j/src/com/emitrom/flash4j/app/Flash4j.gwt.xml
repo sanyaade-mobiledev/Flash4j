@@ -7,8 +7,11 @@
    <inherits name='com.emitrom.flash4j.flex.Flex'/>
    <inherits name='com.emitrom.flash4j.flex.maps.Maps'/>
     <inherits name='com.emitrom.pilot.maps.Maps'/>
-   <inherits name='com.sencha.gxt.ui.GXT'/>
-  <entry-point class='com.emitrom.flash4j.app.client.Flash4jDemo'/>
+    
+    
+    <inherits name="com.google.gwt.uibinder.UiBinder"/>
+    
+  <entry-point class='com.emitrom.flash4j.app.client.Flash4j'/>
   
   <set-property name="user.agent" value="safari" />
 

@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.ux.client.mx.iframe;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.containers.HBox;
+import com.emitrom.flash4j.flex.client.ui.mx.HBox;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

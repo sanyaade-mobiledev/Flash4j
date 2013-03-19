@@ -16,8 +16,8 @@
 package com.emitrom.flash4j.flex.flexlib.client.controls;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.MenuBar;
 import com.emitrom.flash4j.flex.client.mx.core.ScrollPolicy;
+import com.emitrom.flash4j.flex.client.ui.mx.MenuBar;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

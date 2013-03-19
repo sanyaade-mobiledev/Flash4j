@@ -479,7 +479,7 @@ public class Grid extends ProxyObject {
      *            the generic type
      * @return the columns
      */
-    public native <T extends JavaScriptObject> T getColumns() /*-{
+    private native <T extends JavaScriptObject> T getColumns() /*-{
 		return this.getcolumns();
     }-*/;
 

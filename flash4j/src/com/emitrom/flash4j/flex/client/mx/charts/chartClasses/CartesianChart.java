@@ -19,8 +19,8 @@ import java.util.List;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.flex.client.core.utils.DataConverter;
-import com.emitrom.flash4j.flex.client.mx.charts.AxisRenderer;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
+import com.emitrom.flash4j.flex.client.ui.mx.AxisRenderer;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

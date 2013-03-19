@@ -17,7 +17,7 @@ package com.emitrom.flash4j.flex.ux.client.mx.containers;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
-import com.emitrom.flash4j.flex.client.mx.containers.Canvas;
+import com.emitrom.flash4j.flex.client.ui.mx.Canvas;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

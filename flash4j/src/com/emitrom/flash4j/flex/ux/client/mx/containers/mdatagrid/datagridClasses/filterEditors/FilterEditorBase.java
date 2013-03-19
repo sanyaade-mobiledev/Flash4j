@@ -15,7 +15,7 @@
 **************************************************************************/
 package com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.datagridClasses.filterEditors;
 
-import com.emitrom.flash4j.flex.client.mx.containers.Box;
+import com.emitrom.flash4j.flex.client.ui.mx.Box;
 import com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.datagridClasses.SuperDataGridColumn;
 import com.google.gwt.core.client.JavaScriptObject;
 

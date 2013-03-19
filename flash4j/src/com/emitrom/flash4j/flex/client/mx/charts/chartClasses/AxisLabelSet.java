@@ -22,8 +22,8 @@ import com.emitrom.flash4j.core.client.JsoHelper;
 import com.emitrom.flash4j.core.client.ProxyObject;
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.flex.client.core.utils.DataConverter;
-import com.emitrom.flash4j.flex.client.mx.charts.AxisLabel;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
+import com.emitrom.flash4j.flex.client.ui.mx.AxisLabel;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArrayNumber;
 

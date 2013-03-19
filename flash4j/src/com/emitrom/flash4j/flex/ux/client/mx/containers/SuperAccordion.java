@@ -19,8 +19,8 @@ import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.core.client.framework.ClassUtil;
 import com.emitrom.flash4j.flex.client.core.factories.ClassFactory;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
-import com.emitrom.flash4j.flex.client.mx.core.Container;
 import com.emitrom.flash4j.flex.client.mx.core.UIComponent;
+import com.emitrom.flash4j.flex.client.ui.mx.Container;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArrayInteger;
 

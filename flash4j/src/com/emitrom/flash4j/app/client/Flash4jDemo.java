@@ -17,7 +17,8 @@ import com.emitrom.flash4j.excel.client.Sheet;
 import com.emitrom.flash4j.flex.client.core.runtime.FLEX;
 import com.emitrom.flash4j.flex.client.core.runtime.FlexEntryPoint;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
-import com.emitrom.flash4j.flex.client.mx.containers.Panel;
+import com.emitrom.flash4j.flex.client.ui.mx.Panel;
+import com.emitrom.flash4j.flex.client.ui.spark.Application;
 import com.emitrom.flash4j.flex.maps.client.MapLoadHandler;
 import com.emitrom.flash4j.flex.maps.client.MapWidget;
 import com.emitrom.pilot.maps.client.GMap;
@@ -73,7 +74,7 @@ public class Flash4jDemo extends FlexEntryPoint {
 
         ExcelFile file = new ExcelFile();
         file.addSheet(excelSheet);
-        file.save("SuperHeroes.xls");
+        Application.get().saveFile(file.saveToByteArray(), "file.xls");
     }
 
     private void exportToPdf() {
@@ -108,7 +109,7 @@ public class Flash4jDemo extends FlexEntryPoint {
         pdf.setTextStyle(new RGBColor(0x000000));
         pdf.setFont(new CoreFont(), 10);
         pdf.addGrid(grid);
-        pdf.saveFile("SuperHeroes.pdf");
+        Application.get().saveFile(pdf.save(), "File.pdf");
 
     }
 

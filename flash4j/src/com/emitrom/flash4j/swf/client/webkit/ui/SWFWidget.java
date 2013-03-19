@@ -1,18 +1,18 @@
 /************************************************************************
-  SWFWidget.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * SWFWidget.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 
 package com.emitrom.flash4j.swf.client.webkit.ui;
 
@@ -61,14 +61,22 @@ public class SWFWidget extends Widget {
     /**
      * Inject swf.
      * 
-     * @param divId the div id
-     * @param swf the swf
-     * @param id the id
-     * @param w the w
-     * @param h the h
-     * @param ver the ver
-     * @param c the c
-     * @param vars the vars
+     * @param divId
+     *            the div id
+     * @param swf
+     *            the swf
+     * @param id
+     *            the id
+     * @param w
+     *            the w
+     * @param h
+     *            the h
+     * @param ver
+     *            the ver
+     * @param c
+     *            the c
+     * @param vars
+     *            the vars
      * @return true, if successful
      */
     @SuppressWarnings("rawtypes")
@@ -88,9 +96,9 @@ public class SWFWidget extends Widget {
 		}
 		so.addParam("allowScriptAccess", "always");
 		so.addParam("swLiveConnect", "true");
-		so.addParam("id", "Gwt4Flash");
-		so.addParam("name", "Gwt4Flash");
-		so.addParam("wmode", "direct");
+		so.addParam("id", "Flash4j");
+		so.addParam("name", "Flash4j");
+		so.addParam("wmode", "transparent");
 
 		return so.write(divId);
     }-*/;
@@ -98,9 +106,12 @@ public class SWFWidget extends Widget {
     /**
      * Instantiates a new sWF widget.
      * 
-     * @param src the src
-     * @param width the width
-     * @param height the height
+     * @param src
+     *            the src
+     * @param width
+     *            the width
+     * @param height
+     *            the height
      */
     public SWFWidget(String src, Integer width, Integer height) {
         this(new SWFParams(src, width, height));
@@ -109,10 +120,14 @@ public class SWFWidget extends Widget {
     /**
      * Instantiates a new sWF widget.
      * 
-     * @param src the src
-     * @param width the width
-     * @param height the height
-     * @param bgcolor the bgcolor
+     * @param src
+     *            the src
+     * @param width
+     *            the width
+     * @param height
+     *            the height
+     * @param bgcolor
+     *            the bgcolor
      */
     public SWFWidget(String src, Integer width, Integer height, String bgcolor) {
         this(new SWFParams(src, width, height, bgcolor));
@@ -121,9 +136,12 @@ public class SWFWidget extends Widget {
     /**
      * Instantiates a new sWF widget.
      * 
-     * @param src the src
-     * @param width the width
-     * @param height the height
+     * @param src
+     *            the src
+     * @param width
+     *            the width
+     * @param height
+     *            the height
      */
     public SWFWidget(String src, int width, int height) {
         this(new SWFParams(src, width, height));
@@ -132,9 +150,12 @@ public class SWFWidget extends Widget {
     /**
      * Instantiates a new sWF widget.
      * 
-     * @param src the src
-     * @param width the width
-     * @param height the height
+     * @param src
+     *            the src
+     * @param width
+     *            the width
+     * @param height
+     *            the height
      */
     public SWFWidget(String src, String width, String height) {
         this(new SWFParams(src, width, height));
@@ -143,10 +164,14 @@ public class SWFWidget extends Widget {
     /**
      * Instantiates a new sWF widget.
      * 
-     * @param src the src
-     * @param width the width
-     * @param height the height
-     * @param bgcolor the bgcolor
+     * @param src
+     *            the src
+     * @param width
+     *            the width
+     * @param height
+     *            the height
+     * @param bgcolor
+     *            the bgcolor
      */
     public SWFWidget(String src, int width, int height, String bgcolor) {
         this(new SWFParams(src, width, height, bgcolor));
@@ -155,10 +180,14 @@ public class SWFWidget extends Widget {
     /**
      * Instantiates a new sWF widget.
      * 
-     * @param src the src
-     * @param width the width
-     * @param height the height
-     * @param bgcolor the bgcolor
+     * @param src
+     *            the src
+     * @param width
+     *            the width
+     * @param height
+     *            the height
+     * @param bgcolor
+     *            the bgcolor
      */
     public SWFWidget(String src, String width, String height, String bgcolor) {
         this(new SWFParams(src, width, height, bgcolor));
@@ -167,12 +196,13 @@ public class SWFWidget extends Widget {
     /**
      * Instantiates a new sWF widget.
      * 
-     * @param params the params
+     * @param params
+     *            the params
      */
     public SWFWidget(SWFParams params) {
         swfParams = params;
-        swfId = idPrefix + count + "_Gwt4Flash";
-        swfDivId = divPrefix + count + "_Gwt4Flash";
+        swfId = idPrefix + count + "_Flash4j";
+        swfDivId = divPrefix + count + "_Flash4j";
         ++count;
         Element element = DOM.createElement("div");
         DOM.setElementProperty(element, "id", swfDivId);
@@ -228,8 +258,8 @@ public class SWFWidget extends Widget {
     /**
      * Show.
      * 
-     * @throws UnsupportedFlashPlayerVersionException the unsupported flash
-     *             player version exception
+     * @throws UnsupportedFlashPlayerVersionException
+     *             the unsupported flash player version exception
      */
     public void show() throws UnsupportedFlashPlayerVersionException {
         setVisible(true);
@@ -317,7 +347,8 @@ public class SWFWidget extends Widget {
     /**
      * Gets the unspported size changing exception.
      * 
-     * @param msg the msg
+     * @param msg
+     *            the msg
      * @return the unspported size changing exception
      */
     private UnsupportedOperationException getUnspportedSizeChangingException(String msg) {

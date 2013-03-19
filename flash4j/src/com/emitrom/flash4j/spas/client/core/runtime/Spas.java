@@ -1,5 +1,5 @@
 /************************************************************************
-  Spas.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
+  ClientIOWidget.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import com.google.gwt.user.client.ui.Widget;
  */
 public class Spas {
 
-    private static final String PATH = GWT.getModuleBaseURL() + "spas/Spas.swf";
+    private static final String PATH = GWT.getModuleBaseURL() + "spas/ClientIOWidget.swf";
 
     private Spas() {
     }

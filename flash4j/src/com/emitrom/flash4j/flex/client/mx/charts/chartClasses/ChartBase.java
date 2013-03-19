@@ -1,18 +1,18 @@
 /************************************************************************
-  ChartBase.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * ChartBase.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 package com.emitrom.flash4j.flex.client.mx.charts.chartClasses;
 
 import java.util.ArrayList;
@@ -24,12 +24,12 @@ import com.emitrom.flash4j.core.client.ProxyObject;
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.core.client.geom.Rectangle;
 import com.emitrom.flash4j.flex.client.core.utils.DataConverter;
-import com.emitrom.flash4j.flex.client.mx.charts.ChartItem;
-import com.emitrom.flash4j.flex.client.mx.charts.Legend;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
 import com.emitrom.flash4j.flex.client.mx.core.UIComponent;
 import com.emitrom.flash4j.flex.client.mx.events.DragEvent;
 import com.emitrom.flash4j.flex.client.mx.events.DragStartEvent;
+import com.emitrom.flash4j.flex.client.ui.mx.ChartItem;
+import com.emitrom.flash4j.flex.client.ui.mx.Legend;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArray;
 
@@ -59,7 +59,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the annotation elements.
      * 
-     * @param values the new annotation elements
+     * @param values
+     *            the new annotation elements
      */
     public void setAnnotationElements(List<ChartElement> values) {
         ArrayCollection collection = DataConverter.fromList(values);
@@ -69,7 +70,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the anntation elements.
      * 
-     * @param collection the new anntation elements
+     * @param collection
+     *            the new anntation elements
      */
     private void setAnntationElements(ArrayCollection collection) {
         _setAnnotationsElements(collection.toArray().getJsObj());
@@ -78,7 +80,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the annotations elements.
      * 
-     * @param values the new annotations elements
+     * @param values
+     *            the new annotations elements
      */
     private native void _setAnnotationsElements(JavaScriptObject values)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -88,7 +91,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the background elements.
      * 
-     * @param values the new background elements
+     * @param values
+     *            the new background elements
      */
     public void setBackgroundElements(List<ChartElement> values) {
         setBackgroundElements(DataConverter.fromList(values));
@@ -97,7 +101,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the background elements.
      * 
-     * @param collection the new background elements
+     * @param collection
+     *            the new background elements
      */
     private void setBackgroundElements(ArrayCollection collection) {
         _setBackgroundElements(collection.toArray().getJsObj());
@@ -106,7 +111,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the background elements.
      * 
-     * @param elements the new background elements
+     * @param elements
+     *            the new background elements
      */
     private native void _setBackgroundElements(JavaScriptObject elements)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -126,7 +132,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the clip content.
      * 
-     * @param value the new clip content
+     * @param value
+     *            the new clip content
      */
     public native void setClipContent(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -146,7 +153,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the data provider.
      * 
-     * @param value the new data provider
+     * @param value
+     *            the new data provider
      */
 
     public void setDataProvider(ArrayCollection value) {
@@ -161,7 +169,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the data tip mode.
      * 
-     * @param value the new data tip mode
+     * @param value
+     *            the new data tip mode
      */
     public native void setDataTipMode(String value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -181,7 +190,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the description.
      * 
-     * @param value the new description
+     * @param value
+     *            the new description
      */
     public native void setDescription(String value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -201,7 +211,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the drag enabled.
      * 
-     * @param value the new drag enabled
+     * @param value
+     *            the new drag enabled
      */
     public native void setDragEnabled(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -221,7 +232,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the drag move enabled.
      * 
-     * @param value the new drag move enabled
+     * @param value
+     *            the new drag move enabled
      */
     public native void setDragMoveEnabled(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -241,7 +253,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the drop enabled.
      * 
-     * @param value the new drop enabled
+     * @param value
+     *            the new drop enabled
      */
     public native void setDropEnabled(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -261,7 +274,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the legend data.
      * 
-     * @param value the new legend data
+     * @param value
+     *            the new legend data
      */
     public void setLegendData(List<Legend> value) {
         setLegendData(DataConverter.fromList(value));
@@ -270,7 +284,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the legend data.
      * 
-     * @param collection the new legend data
+     * @param collection
+     *            the new legend data
      */
     private void setLegendData(ArrayCollection collection) {
         _setLegendData(collection.toArray().getJsObj());
@@ -279,7 +294,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the legend data.
      * 
-     * @param data the new legend data
+     * @param data
+     *            the new legend data
      */
     private native void _setLegendData(JavaScriptObject data)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -309,7 +325,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the mouse sensititivity.
      * 
-     * @param value the new mouse sensititivity
+     * @param value
+     *            the new mouse sensititivity
      */
     public native void setMouseSensititivity(int value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -338,7 +355,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the selection mode.
      * 
-     * @param value the new selection mode
+     * @param value
+     *            the new selection mode
      */
     public native void setSelectionMode(String value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -371,7 +389,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the series.
      * 
-     * @param values the new series
+     * @param values
+     *            the new series
      */
     public void setSeries(List<Series> values) {
         series = values;
@@ -382,7 +401,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the series.
      * 
-     * @param collection the new series
+     * @param collection
+     *            the new series
      */
     public void setSeries(ArrayCollection collection) {
         _setSeries(collection.toArray().getJsObj());
@@ -391,7 +411,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the series.
      * 
-     * @param value the new series
+     * @param value
+     *            the new series
      */
     private native void _setSeries(JavaScriptObject value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -401,7 +422,8 @@ public class ChartBase extends UIComponent {
     /**
      * Gets the series.
      * 
-     * @param <T> the generic type
+     * @param <T>
+     *            the generic type
      * @return the series
      */
     public List<Series> getSeries() {
@@ -416,7 +438,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the series filters.
      * 
-     * @param values the new series filters
+     * @param values
+     *            the new series filters
      */
     public void setSeriesFilters(List<? extends ProxyObject> values) {
         setSeriesFilters(DataConverter.fromList(values));
@@ -425,7 +448,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the series filters.
      * 
-     * @param collection the new series filters
+     * @param collection
+     *            the new series filters
      */
     private void setSeriesFilters(ArrayCollection collection) {
         _setSeriesFilters(collection.toArray().getJsObj());
@@ -434,7 +458,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the series filters.
      * 
-     * @param value the new series filters
+     * @param value
+     *            the new series filters
      */
     private native void _setSeriesFilters(JavaScriptObject value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -454,7 +479,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the show all data tips.
      * 
-     * @param value the new show all data tips
+     * @param value
+     *            the new show all data tips
      */
     public native void setShowAllDataTips(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -474,7 +500,8 @@ public class ChartBase extends UIComponent {
     /**
      * Sets the show data tips.
      * 
-     * @param value the new show data tips
+     * @param value
+     *            the new show data tips
      */
     public native void setShowDataTips(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -502,7 +529,8 @@ public class ChartBase extends UIComponent {
     /**
      * Drag strart handler.
      * 
-     * @param event the event
+     * @param event
+     *            the event
      */
     public native void dragStrartHandler(DragStartEvent event)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -523,19 +551,21 @@ public class ChartBase extends UIComponent {
     /**
      * Gets the first item.
      * 
-     * @param direction the direction
+     * @param direction
+     *            the direction
      * @return the first item
      */
     public native ChartItem getFirstItem(String direction)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getFirstItem(direction);
-		return @com.emitrom.flash4j.flex.client.mx.charts.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
      * Gets the items in region.
      * 
-     * @param region the region
+     * @param region
+     *            the region
      * @return the items in region
      */
     public List<ChartItem> getItemsInRegion(Rectangle region) {
@@ -557,37 +587,40 @@ public class ChartBase extends UIComponent {
     /**
      * Gets the last item.
      * 
-     * @param direction the direction
+     * @param direction
+     *            the direction
      * @return the last item
      */
     public native ChartItem getLastItem(String direction)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getLastItem(direction);
-		return @com.emitrom.flash4j.flex.client.mx.charts.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
      * Gets the next item.
      * 
-     * @param direction the direction
+     * @param direction
+     *            the direction
      * @return the next item
      */
     public native ChartItem getNextItem(String direction)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getNextItem(direction);
-		return @com.emitrom.flash4j.flex.client.mx.charts.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
      * Gets the previous item.
      * 
-     * @param direction the direction
+     * @param direction
+     *            the direction
      * @return the previous item
      */
     public native ChartItem getPreviousItem(String direction)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getPreviousItem(direction);
-		return @com.emitrom.flash4j.flex.client.mx.charts.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -601,7 +634,8 @@ public class ChartBase extends UIComponent {
     /**
      * Hide drop feedback.
      * 
-     * @param event the event
+     * @param event
+     *            the event
      */
     public native void hideDropFeedback(DragEvent event)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -628,7 +662,8 @@ public class ChartBase extends UIComponent {
     /**
      * Show drop feedback.
      * 
-     * @param event the event
+     * @param event
+     *            the event
      */
     public native void showDropFeedback(DragEvent event)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();

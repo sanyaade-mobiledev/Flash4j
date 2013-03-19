@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.flexlib.client.baseClasses;
 
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
-import com.emitrom.flash4j.flex.client.mx.controls.PopUpButton;
+import com.emitrom.flash4j.flex.client.ui.mx.PopUpButton;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

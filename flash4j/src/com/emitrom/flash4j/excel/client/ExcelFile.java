@@ -1,25 +1,24 @@
 /************************************************************************
-  ExcelFile.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * ExcelFile.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 
 package com.emitrom.flash4j.excel.client;
 
 import com.emitrom.flash4j.core.client.ProxyObject;
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.core.client.utils.ByteArray;
-import com.emitrom.flash4j.flex.client.spark.components.Application;
 
 /**
  * The Class ExcelFile.
@@ -102,22 +101,5 @@ public class ExcelFile extends ProxyObject {
 		peer
 				.loadFromByteArray(xls.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()());
     }-*/;
-
-    /**
-     * Saves the PDF file
-     */
-    public void save() {
-        Application.get().saveFile(this.saveToByteArray(), "File.xls");
-    }
-
-    /**
-     * Saves the PDF file
-     * 
-     * @param fileName
-     *            , the name of the file to save
-     */
-    public void save(String fileName) {
-        Application.get().saveFile(this.saveToByteArray(), fileName);
-    }
 
 }

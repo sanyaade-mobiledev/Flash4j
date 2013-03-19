@@ -16,8 +16,8 @@
 package com.emitrom.flash4j.flex.client.mx.charts.items;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.charts.ChartItem;
 import com.emitrom.flash4j.flex.client.mx.graphics.IFill;
+import com.emitrom.flash4j.flex.client.ui.mx.ChartItem;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

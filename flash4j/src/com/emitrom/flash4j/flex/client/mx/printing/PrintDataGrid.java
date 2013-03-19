@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.client.mx.printing;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.DataGrid;
+import com.emitrom.flash4j.flex.client.ui.mx.DataGrid;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

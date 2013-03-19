@@ -22,7 +22,7 @@ import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.flex.client.core.data.HierarchicalCollectionItem;
 import com.emitrom.flash4j.flex.client.core.utils.DataConverter;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
-import com.emitrom.flash4j.flex.client.mx.controls.Menu;
+import com.emitrom.flash4j.flex.client.ui.mx.Menu;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

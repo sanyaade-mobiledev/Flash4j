@@ -1,18 +1,18 @@
 /************************************************************************
-  Graphics.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * Graphics.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 
 package com.emitrom.flash4j.core.client.display;
 
@@ -61,7 +61,8 @@ public final class Graphics extends ProxyObject {
     /**
      * Fills a drawing area with a bitmap image.
      * 
-     * @param bitmap the bitmap
+     * @param bitmap
+     *            the bitmap
      */
     public native void beginBitmapFill(BitmapData bitmap) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -72,8 +73,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Fills a drawing area with a bitmap image.
      * 
-     * @param bitmap the bitmap
-     * @param matrix the matrix
+     * @param bitmap
+     *            the bitmap
+     * @param matrix
+     *            the matrix
      */
     public native void beginBitmapFill(BitmapData bitmap, Matrix matrix) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -86,9 +89,12 @@ public final class Graphics extends ProxyObject {
     /**
      * Fills a drawing area with a bitmap image.
      * 
-     * @param bitmap the bitmap
-     * @param matrix the matrix
-     * @param repeat the repeat
+     * @param bitmap
+     *            the bitmap
+     * @param matrix
+     *            the matrix
+     * @param repeat
+     *            the repeat
      */
     public native void beginBitmapFill(BitmapData bitmap, Matrix matrix, boolean repeat) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -102,10 +108,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin bitmap fill.
      * 
-     * @param bitmap the bitmap
-     * @param matrix the matrix
-     * @param repeat the repeat
-     * @param smooth the smooth
+     * @param bitmap
+     *            the bitmap
+     * @param matrix
+     *            the matrix
+     * @param repeat
+     *            the repeat
+     * @param smooth
+     *            the smooth
      */
     public native void beginBitmapFill(BitmapData bitmap, Matrix matrix, boolean repeat, boolean smooth) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -119,7 +129,8 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin fill.
      * 
-     * @param color the color
+     * @param color
+     *            the color
      */
     public native void beginFill(int color) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -129,8 +140,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin fill.
      * 
-     * @param color the color
-     * @param alpha the alpha
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
      */
     public native void beginFill(int color, double alpha) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -140,10 +153,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
      */
     public native void beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -153,11 +170,16 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
      */
     public native void beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix) /*-{
@@ -174,12 +196,18 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
      */
     public void beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios,
                     Matrix matrix, SpreadMethod spreadMethod) {
@@ -189,12 +217,18 @@ public final class Graphics extends ProxyObject {
     /**
      * _begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
      */
     private native void _beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix, String spreadMethod) /*-{
@@ -212,13 +246,20 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
      */
     public void beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios,
                     Matrix matrix, SpreadMethod spreadMethod, InterpolationMethod interpolationMethod) {
@@ -228,13 +269,20 @@ public final class Graphics extends ProxyObject {
     /**
      * _begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
      */
     private native void _beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix, String spreadMethod, String interpolationMethod) /*-{
@@ -252,14 +300,22 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
-     * @param focalPointRatio the focal point ratio
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
+     * @param focalPointRatio
+     *            the focal point ratio
      */
     public void beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios,
                     Matrix matrix, SpreadMethod spreadMethod, InterpolationMethod interpolationMethod,
@@ -271,14 +327,22 @@ public final class Graphics extends ProxyObject {
     /**
      * _begin gradien fill.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
-     * @param focalPointRatio the focal point ratio
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
+     * @param focalPointRatio
+     *            the focal point ratio
      */
     private native void _beginGradienFill(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix, String spreadMethod, String interpolationMethod,
@@ -297,7 +361,8 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin shader fill.
      * 
-     * @param shader the shader
+     * @param shader
+     *            the shader
      */
     public native void beginShaderFill(Shader shader) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -308,8 +373,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Begin shader fill.
      * 
-     * @param shader the shader
-     * @param matrix the matrix
+     * @param shader
+     *            the shader
+     * @param matrix
+     *            the matrix
      */
     public native void beginShaderFill(Shader shader, Matrix matrix) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -330,7 +397,8 @@ public final class Graphics extends ProxyObject {
     /**
      * Copy from.
      * 
-     * @param sourceGraphics the source graphics
+     * @param sourceGraphics
+     *            the source graphics
      */
     public native void copyFrom(Graphics sourceGraphics) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -341,10 +409,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Curve to.
      * 
-     * @param controlX the control x
-     * @param controlY the control y
-     * @param anchorX the anchor x
-     * @param anchorY the anchor y
+     * @param controlX
+     *            the control x
+     * @param controlY
+     *            the control y
+     * @param anchorX
+     *            the anchor x
+     * @param anchorY
+     *            the anchor y
      */
     public native void curveTo(double controlX, double controlY, double anchorX, double anchorY) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -354,9 +426,12 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw circle.
      * 
-     * @param x the x
-     * @param y the y
-     * @param radius the radius
+     * @param x
+     *            the x
+     * @param y
+     *            the y
+     * @param radius
+     *            the radius
      */
     public native void drawCircle(double x, double y, double radius) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -366,10 +441,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw ellipse.
      * 
-     * @param x the x
-     * @param y the y
-     * @param width the width
-     * @param height the height
+     * @param x
+     *            the x
+     * @param y
+     *            the y
+     * @param width
+     *            the width
+     * @param height
+     *            the height
      */
     public native void drawEllipse(double x, double y, double width, double height) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -379,10 +458,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw rect.
      * 
-     * @param x the x
-     * @param y the y
-     * @param width the width
-     * @param height the height
+     * @param x
+     *            the x
+     * @param y
+     *            the y
+     * @param width
+     *            the width
+     * @param height
+     *            the height
      */
     public native void drawRect(double x, double y, double width, double height) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -392,11 +475,16 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw round rect.
      * 
-     * @param x the x
-     * @param y the y
-     * @param width the width
-     * @param height the height
-     * @param ellipseWidth the ellipse width
+     * @param x
+     *            the x
+     * @param y
+     *            the y
+     * @param width
+     *            the width
+     * @param height
+     *            the height
+     * @param ellipseWidth
+     *            the ellipse width
      */
     public native void drawRoundRect(double x, double y, double width, double height, double ellipseWidth) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -406,12 +494,18 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw round rect.
      * 
-     * @param x the x
-     * @param y the y
-     * @param width the width
-     * @param height the height
-     * @param ellipseWidth the ellipse width
-     * @param ellipseHeight the ellipse height
+     * @param x
+     *            the x
+     * @param y
+     *            the y
+     * @param width
+     *            the width
+     * @param height
+     *            the height
+     * @param ellipseWidth
+     *            the ellipse width
+     * @param ellipseHeight
+     *            the ellipse height
      */
     public native void drawRoundRect(double x, double y, double width, double height, double ellipseWidth,
                     double ellipseHeight) /*-{
@@ -422,14 +516,22 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw round rect complex.
      * 
-     * @param x the x
-     * @param y the y
-     * @param width the width
-     * @param height the height
-     * @param topLeftRadius the top left radius
-     * @param topRightRadius the top right radius
-     * @param bottomLeftRadius the bottom left radius
-     * @param bottomRightRadius the bottom right radius
+     * @param x
+     *            the x
+     * @param y
+     *            the y
+     * @param width
+     *            the width
+     * @param height
+     *            the height
+     * @param topLeftRadius
+     *            the top left radius
+     * @param topRightRadius
+     *            the top right radius
+     * @param bottomLeftRadius
+     *            the bottom left radius
+     * @param bottomRightRadius
+     *            the bottom right radius
      */
     public native void drawRoundRectComplex(double x, double y, double width, double height, double topLeftRadius,
                     double topRightRadius, double bottomLeftRadius, double bottomRightRadius) /*-{
@@ -441,8 +543,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw triangles.
      * 
-     * @param commands the commands
-     * @param data the data
+     * @param commands
+     *            the commands
+     * @param data
+     *            the data
      */
     private native void drawTriangles(JsArrayNumber commands, JsArrayInteger data) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -452,9 +556,12 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw triangles.
      * 
-     * @param commands the commands
-     * @param data the data
-     * @param uvtData the uvt data
+     * @param commands
+     *            the commands
+     * @param data
+     *            the data
+     * @param uvtData
+     *            the uvt data
      */
     private native void drawTriangles(JsArrayNumber commands, JsArrayInteger data, JsArrayNumber uvtData) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -464,10 +571,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Draw triangles.
      * 
-     * @param commands the commands
-     * @param data the data
-     * @param uvtData the uvt data
-     * @param culling the culling
+     * @param commands
+     *            the commands
+     * @param data
+     *            the data
+     * @param uvtData
+     *            the uvt data
+     * @param culling
+     *            the culling
      */
     private native void drawTriangles(JsArrayNumber commands, JsArrayInteger data, JsArrayNumber uvtData, String culling) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -485,7 +596,8 @@ public final class Graphics extends ProxyObject {
     /**
      * Line bitmap style.
      * 
-     * @param bitmap the bitmap
+     * @param bitmap
+     *            the bitmap
      */
     public native void lineBitmapStyle(BitmapData bitmap) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -496,8 +608,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Line bitmap style.
      * 
-     * @param bitmap the bitmap
-     * @param matrix the matrix
+     * @param bitmap
+     *            the bitmap
+     * @param matrix
+     *            the matrix
      */
     public native void lineBitmapStyle(BitmapData bitmap, Matrix matrix) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -510,9 +624,12 @@ public final class Graphics extends ProxyObject {
     /**
      * Line bitmap style.
      * 
-     * @param bitmap the bitmap
-     * @param matrix the matrix
-     * @param repeat the repeat
+     * @param bitmap
+     *            the bitmap
+     * @param matrix
+     *            the matrix
+     * @param repeat
+     *            the repeat
      */
     public native void lineBitmapStyle(BitmapData bitmap, Matrix matrix, boolean repeat) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -526,10 +643,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Line bitmap style.
      * 
-     * @param bitmap the bitmap
-     * @param matrix the matrix
-     * @param repeat the repeat
-     * @param smooth the smooth
+     * @param bitmap
+     *            the bitmap
+     * @param matrix
+     *            the matrix
+     * @param repeat
+     *            the repeat
+     * @param smooth
+     *            the smooth
      */
     public native void lineBitmapStyle(BitmapData bitmap, Matrix matrix, boolean repeat, boolean smooth) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -543,10 +664,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
      */
     public native void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -556,11 +681,16 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
      */
     public native void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix) /*-{
@@ -577,12 +707,18 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
      */
     public void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios,
                     Matrix matrix, SpreadMethod spreadMethod) {
@@ -592,12 +728,18 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
      */
     private native void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix, String spreadMethod) /*-{
@@ -615,13 +757,20 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
      */
     public void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios,
                     Matrix matrix, SpreadMethod spreadMethod, InterpolationMethod interpolationMethod) {
@@ -631,13 +780,20 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
      */
     private native void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix, String spreadMethod, String interpolationMethod) /*-{
@@ -655,14 +811,22 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
-     * @param focalPointRatio the focal point ratio
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
+     * @param focalPointRatio
+     *            the focal point ratio
      */
     public void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas, JsArrayInteger ratios,
                     Matrix matrix, SpreadMethod spreadMethod, InterpolationMethod interpolationMethod,
@@ -674,14 +838,22 @@ public final class Graphics extends ProxyObject {
     /**
      * Line gradien style.
      * 
-     * @param type the type
-     * @param colors the colors
-     * @param alphas the alphas
-     * @param ratios the ratios
-     * @param matrix the matrix
-     * @param spreadMethod the spread method
-     * @param interpolationMethod the interpolation method
-     * @param focalPointRatio the focal point ratio
+     * @param type
+     *            the type
+     * @param colors
+     *            the colors
+     * @param alphas
+     *            the alphas
+     * @param ratios
+     *            the ratios
+     * @param matrix
+     *            the matrix
+     * @param spreadMethod
+     *            the spread method
+     * @param interpolationMethod
+     *            the interpolation method
+     * @param focalPointRatio
+     *            the focal point ratio
      */
     private native void lineGradienStyle(String type, JsArrayString colors, JsArrayInteger alphas,
                     JsArrayInteger ratios, Matrix matrix, String spreadMethod, String interpolationMethod,
@@ -700,7 +872,8 @@ public final class Graphics extends ProxyObject {
     /**
      * Line shader style.
      * 
-     * @param shader the shader
+     * @param shader
+     *            the shader
      */
     public native void lineShaderStyle(Shader shader) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -711,8 +884,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Line shader style.
      * 
-     * @param shader the shader
-     * @param matrix the matrix
+     * @param shader
+     *            the shader
+     * @param matrix
+     *            the matrix
      */
     public native void lineShaderStyle(Shader shader, Matrix matrix) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -733,7 +908,8 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
+     * @param thickness
+     *            the thickness
      */
     public native void lineStyle(double thickness) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -743,8 +919,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
      */
     public native void lineStyle(double thickness, int color) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -754,9 +932,12 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
      */
     public native void lineStyle(double thickness, int color, double alpha) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -766,10 +947,14 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
      */
     public native void lineStyle(double thickness, int color, double alpha, boolean pixelHinting) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -779,11 +964,16 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
      */
     public void lineStyle(double thickness, int color, double alpha, boolean pixelHinting, LineScaleMode scaleMode) {
         _lineStyle(thickness, color, alpha, pixelHinting, scaleMode.value);
@@ -792,11 +982,16 @@ public final class Graphics extends ProxyObject {
     /**
      * _line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
      */
     private native void _lineStyle(double thickness, int color, double alpha, boolean pixelHinting, String scaleMode) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -806,12 +1001,18 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
-     * @param caps the caps
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
+     * @param caps
+     *            the caps
      */
     public void lineStyle(double thickness, int color, double alpha, boolean pixelHinting, LineScaleMode scaleMode,
                     CapsStyle caps) {
@@ -821,12 +1022,18 @@ public final class Graphics extends ProxyObject {
     /**
      * _line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
-     * @param caps the caps
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
+     * @param caps
+     *            the caps
      */
     private native void _lineStyle(double thickness, int color, double alpha, boolean pixelHinting, String scaleMode,
                     String caps) /*-{
@@ -837,13 +1044,20 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
-     * @param caps the caps
-     * @param joints the joints
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
+     * @param caps
+     *            the caps
+     * @param joints
+     *            the joints
      */
     public void lineStyle(double thickness, int color, double alpha, boolean pixelHinting, LineScaleMode scaleMode,
                     CapsStyle caps, JointStyle joints) {
@@ -853,13 +1067,20 @@ public final class Graphics extends ProxyObject {
     /**
      * _line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
-     * @param caps the caps
-     * @param joints the joints
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
+     * @param caps
+     *            the caps
+     * @param joints
+     *            the joints
      */
     private native void _lineStyle(double thickness, int color, double alpha, boolean pixelHinting, String scaleMode,
                     String caps, String joints) /*-{
@@ -871,14 +1092,22 @@ public final class Graphics extends ProxyObject {
     /**
      * Line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
-     * @param caps the caps
-     * @param joints the joints
-     * @param miterLimit the miter limit
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
+     * @param caps
+     *            the caps
+     * @param joints
+     *            the joints
+     * @param miterLimit
+     *            the miter limit
      */
     public void lineStyle(double thickness, int color, double alpha, boolean pixelHinting, LineScaleMode scaleMode,
                     CapsStyle caps, JointStyle joints, double miterLimit) {
@@ -888,14 +1117,22 @@ public final class Graphics extends ProxyObject {
     /**
      * _line style.
      * 
-     * @param thickness the thickness
-     * @param color the color
-     * @param alpha the alpha
-     * @param pixelHinting the pixel hinting
-     * @param scaleMode the scale mode
-     * @param caps the caps
-     * @param joints the joints
-     * @param miterLimit the miter limit
+     * @param thickness
+     *            the thickness
+     * @param color
+     *            the color
+     * @param alpha
+     *            the alpha
+     * @param pixelHinting
+     *            the pixel hinting
+     * @param scaleMode
+     *            the scale mode
+     * @param caps
+     *            the caps
+     * @param joints
+     *            the joints
+     * @param miterLimit
+     *            the miter limit
      */
     private native void _lineStyle(double thickness, int color, double alpha, boolean pixelHinting, String scaleMode,
                     String caps, String joints, double miterLimit) /*-{
@@ -907,8 +1144,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Line to.
      * 
-     * @param x the x
-     * @param y the y
+     * @param x
+     *            the x
+     * @param y
+     *            the y
      */
     public native void lineTo(double x, double y) /*-{
 		peer.lineTo(x, y);
@@ -917,8 +1156,10 @@ public final class Graphics extends ProxyObject {
     /**
      * Move to.
      * 
-     * @param x the x
-     * @param y the y
+     * @param x
+     *            the x
+     * @param y
+     *            the y
      */
     public native void moveTo(double x, double y) /*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();

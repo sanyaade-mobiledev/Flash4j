@@ -15,7 +15,7 @@
 **************************************************************************/
 package com.emitrom.flash4j.flex.ux.client.mx.containers.core;
 
-import com.emitrom.flash4j.flex.client.mx.containers.ViewStack;
+import com.emitrom.flash4j.flex.client.ui.mx.ViewStack;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

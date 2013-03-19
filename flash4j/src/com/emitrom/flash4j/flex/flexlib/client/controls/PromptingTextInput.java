@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.flexlib.client.controls;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.TextInput;
+import com.emitrom.flash4j.flex.client.ui.mx.TextInput;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

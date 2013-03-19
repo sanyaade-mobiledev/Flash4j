@@ -1,24 +1,24 @@
 /************************************************************************
-  MenuEvent.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * MenuEvent.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 package com.emitrom.flash4j.flex.client.mx.events;
 
 import com.emitrom.flash4j.core.client.events.Event;
-import com.emitrom.flash4j.flex.client.mx.controls.Menu;
-import com.emitrom.flash4j.flex.client.mx.controls.MenuBar;
-import com.emitrom.flash4j.flex.client.mx.controls.menuClasses.MenuItem;
+import com.emitrom.flash4j.flex.client.ui.mx.Menu;
+import com.emitrom.flash4j.flex.client.ui.mx.MenuBar;
+import com.emitrom.flash4j.flex.client.ui.mx.MenuItem;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -71,7 +71,7 @@ public class MenuEvent extends ListEvent {
     public final native MenuItem getItem()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getitem();
-		return @com.emitrom.flash4j.flex.client.mx.controls.menuClasses.MenuItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.MenuItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -92,7 +92,7 @@ public class MenuEvent extends ListEvent {
     public final native Menu getMenu()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getmenu();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Menu::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Menu::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -103,7 +103,7 @@ public class MenuEvent extends ListEvent {
     public final native MenuBar getMenuBar()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getmenuBar();
-		return @com.emitrom.flash4j.flex.client.mx.controls.MenuBar::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.MenuBar::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     public static MenuEvent cast(Event event) {

@@ -16,9 +16,9 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.fieldset;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.containers.TitleWindow;
-import com.emitrom.flash4j.flex.client.mx.controls.Button;
 import com.emitrom.flash4j.flex.client.mx.core.UIComponent;
+import com.emitrom.flash4j.flex.client.ui.mx.Button;
+import com.emitrom.flash4j.flex.client.ui.mx.TitleWindow;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

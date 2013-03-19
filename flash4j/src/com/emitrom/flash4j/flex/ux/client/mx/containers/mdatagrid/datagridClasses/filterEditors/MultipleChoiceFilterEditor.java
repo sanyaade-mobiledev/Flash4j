@@ -16,8 +16,8 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.datagridClasses.filterEditors;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.CheckBox;
-import com.emitrom.flash4j.flex.client.mx.controls.List;
+import com.emitrom.flash4j.flex.client.ui.mx.CheckBox;
+import com.emitrom.flash4j.flex.client.ui.mx.List;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -49,7 +49,7 @@ public class MultipleChoiceFilterEditor extends DropDownFilterEditorBase {
     public native CheckBox getAllCheckBox()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getallCheckBox();
-		return @com.emitrom.flash4j.flex.client.mx.controls.CheckBox::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.CheckBox::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -60,7 +60,7 @@ public class MultipleChoiceFilterEditor extends DropDownFilterEditorBase {
     public native List getLabelList()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getlabelList();
-		return @com.emitrom.flash4j.flex.client.mx.controls.List::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.List::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
 }

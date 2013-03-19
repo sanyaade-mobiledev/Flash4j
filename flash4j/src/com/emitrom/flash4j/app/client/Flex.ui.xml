@@ -1,0 +1,7 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:mx="urn:import:com.emitrom.flash4j.flex.client.ui.mx">
+	
+	<mx:Button label="Hello World" x="100" y="200" />
+	
+</ui:UiBinder> 

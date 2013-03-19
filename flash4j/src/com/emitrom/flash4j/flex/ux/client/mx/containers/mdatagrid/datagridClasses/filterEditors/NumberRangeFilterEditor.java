@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.datagridClasses.filterEditors;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.Label;
+import com.emitrom.flash4j.flex.client.ui.mx.Label;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -48,7 +48,7 @@ public class NumberRangeFilterEditor extends DropDownFilterEditorBase {
     public native Label getTextFromLabel()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.gettextFromLabel();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -59,7 +59,7 @@ public class NumberRangeFilterEditor extends DropDownFilterEditorBase {
     public native Label getTextToLabel()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.gettextToLabel();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
 }

@@ -16,9 +16,9 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.datagridClasses.filterEditors;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.HSlider;
-import com.emitrom.flash4j.flex.client.mx.controls.Label;
-import com.emitrom.flash4j.flex.client.mx.controls.LinkButton;
+import com.emitrom.flash4j.flex.client.ui.mx.HSlider;
+import com.emitrom.flash4j.flex.client.ui.mx.Label;
+import com.emitrom.flash4j.flex.client.ui.mx.LinkButton;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -50,7 +50,7 @@ public class SliderFilterEditor extends DropDownFilterEditorBase {
     public native Label getTextFromLabel()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.gettextFromLabel();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -61,7 +61,7 @@ public class SliderFilterEditor extends DropDownFilterEditorBase {
     public native Label getTextToLabel()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.gettextToLabel();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -72,7 +72,7 @@ public class SliderFilterEditor extends DropDownFilterEditorBase {
     public native LinkButton getResetLinkButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getresetLinkButton();
-		return @com.emitrom.flash4j.flex.client.mx.controls.LinkButton::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.LinkButton::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -83,7 +83,7 @@ public class SliderFilterEditor extends DropDownFilterEditorBase {
     public native HSlider getRangeSlider()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getrangeSlider();
-		return @com.emitrom.flash4j.flex.client.mx.controls.HSlider::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.HSlider::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
 }

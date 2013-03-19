@@ -16,8 +16,8 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.fieldset;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.core.Container;
 import com.emitrom.flash4j.flex.client.mx.core.ContainerLayout;
+import com.emitrom.flash4j.flex.client.ui.mx.Container;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

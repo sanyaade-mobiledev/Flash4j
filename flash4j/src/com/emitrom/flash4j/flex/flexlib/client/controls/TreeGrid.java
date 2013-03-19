@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.flexlib.client.controls;
 
 import com.emitrom.flash4j.core.client.ProxyObject;
-import com.emitrom.flash4j.flex.client.mx.controls.DataGrid;
+import com.emitrom.flash4j.flex.client.ui.mx.DataGrid;
 import com.emitrom.flash4j.flex.flexlib.client.core.FlexLibFactory;
 import com.google.gwt.core.client.JavaScriptObject;
 

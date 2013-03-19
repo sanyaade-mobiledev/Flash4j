@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.DataGrid;
+import com.emitrom.flash4j.flex.client.ui.mx.DataGrid;
 import com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.core.ISearchable;
 import com.google.gwt.core.client.JavaScriptObject;
 

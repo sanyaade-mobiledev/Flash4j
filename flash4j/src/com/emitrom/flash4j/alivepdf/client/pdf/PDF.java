@@ -63,7 +63,6 @@ import com.emitrom.flash4j.core.client.events.EventDispatcher;
 import com.emitrom.flash4j.core.client.geom.Matrix;
 import com.emitrom.flash4j.core.client.geom.Rectangle;
 import com.emitrom.flash4j.core.client.utils.ByteArray;
-import com.emitrom.flash4j.flex.client.spark.components.Application;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -2560,23 +2559,6 @@ public class PDF extends EventDispatcher {
     public final void addCell(double width, double height, String text, double border, double ln, Align align,
                     double fill) {
         _addCell(width, height, text, border, ln, align.value, fill);
-    }
-
-    /**
-     * Saves the PDF file
-     */
-    public void saveFile() {
-        Application.get().saveFile(this.save(), "File.pdf");
-    }
-
-    /**
-     * Saves the PDF file
-     * 
-     * @param fileName
-     *            , the name of the file to save
-     */
-    public void saveFile(String fileName) {
-        Application.get().saveFile(this.save(), fileName);
     }
 
     /**

@@ -18,8 +18,8 @@ package com.emitrom.flash4j.flex.ux.client.mx.containers;
 import com.emitrom.flash4j.core.client.events.Event;
 import com.emitrom.flash4j.core.client.events.handlers.EventHandler;
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.containers.Panel;
 import com.emitrom.flash4j.flex.client.mx.effects.Resize;
+import com.emitrom.flash4j.flex.client.ui.mx.Panel;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

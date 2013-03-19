@@ -2,7 +2,6 @@
 <module>
   <inherits name='com.emitrom.flash4j.swf.SWF'/>
   <inherits name='com.emitrom.flash4j.core.detect.Detect'/>
-   <inherits name="com.emitrom.air4j.core.Core" />
 	<script src="swfobject-2.0.js"/> 
 	<script src="swfobject_source.js"/>
 	 <script src="FABridge.js"/>

@@ -16,8 +16,8 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.datagridClasses.filterEditors;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.controls.Label;
-import com.emitrom.flash4j.flex.client.mx.controls.TextInput;
+import com.emitrom.flash4j.flex.client.ui.mx.Label;
+import com.emitrom.flash4j.flex.client.ui.mx.TextInput;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -49,7 +49,7 @@ public class WildcardFilterEditor extends DropDownFilterEditorBase {
     public native Label getSearchLabel()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getsearchLabel();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -60,7 +60,7 @@ public class WildcardFilterEditor extends DropDownFilterEditorBase {
     public native TextInput getWildcardInput()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getwildcardInput();
-		return @com.emitrom.flash4j.flex.client.mx.controls.TextInput::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.TextInput::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
 }

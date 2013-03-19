@@ -16,10 +16,10 @@
 package com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.containers.HBox;
-import com.emitrom.flash4j.flex.client.mx.controls.Button;
-import com.emitrom.flash4j.flex.client.mx.controls.Label;
-import com.emitrom.flash4j.flex.client.mx.controls.TextInput;
+import com.emitrom.flash4j.flex.client.ui.mx.Button;
+import com.emitrom.flash4j.flex.client.ui.mx.HBox;
+import com.emitrom.flash4j.flex.client.ui.mx.Label;
+import com.emitrom.flash4j.flex.client.ui.mx.TextInput;
 import com.emitrom.flash4j.flex.ux.client.mx.containers.mdatagrid.core.ISearchable;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -78,7 +78,7 @@ public class SearchBox extends HBox {
     public native Label getSearchLabel()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = this.getsearchLabel();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Label::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -89,7 +89,7 @@ public class SearchBox extends HBox {
     public native TextInput getSearchInput()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getsearchInput();
-		return @com.emitrom.flash4j.flex.client.mx.controls.TextInput::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.TextInput::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -100,7 +100,7 @@ public class SearchBox extends HBox {
     public final native Button getPreviousButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getpreviousButton();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -111,7 +111,7 @@ public class SearchBox extends HBox {
     public final native Button getNextButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getnextButton();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
 }

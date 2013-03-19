@@ -16,7 +16,7 @@
 package com.emitrom.flash4j.flex.client.mx.events;
 
 import com.emitrom.flash4j.core.client.events.Event;
-import com.emitrom.flash4j.flex.client.mx.controls.ToolTip;
+import com.emitrom.flash4j.flex.client.ui.mx.ToolTip;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -57,6 +57,6 @@ public class ToolTipEvent extends Event {
     public final native ToolTip getToolTip()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.gettoolTip();
-		return @com.emitrom.flash4j.flex.client.mx.controls.ToolTip::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.ToolTip::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 }

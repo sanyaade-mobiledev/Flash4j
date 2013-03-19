@@ -1,18 +1,18 @@
 /************************************************************************
-  Series.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * Series.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 package com.emitrom.flash4j.flex.client.mx.charts.chartClasses;
 
 import java.util.ArrayList;
@@ -22,8 +22,8 @@ import java.util.List;
 import com.emitrom.flash4j.core.client.JsoHelper;
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.flex.client.core.utils.DataConverter;
-import com.emitrom.flash4j.flex.client.mx.charts.ChartItem;
 import com.emitrom.flash4j.flex.client.mx.collections.ArrayCollection;
+import com.emitrom.flash4j.flex.client.ui.mx.ChartItem;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArrayInteger;
 
@@ -76,7 +76,8 @@ public class Series extends ChartElement {
     /**
      * Sets the data tip items.
      * 
-     * @param items the new data tip items
+     * @param items
+     *            the new data tip items
      */
     public void setDataTipItems(List<ChartItem> items) {
         setDataTipItems(DataConverter.fromList(items));
@@ -85,7 +86,8 @@ public class Series extends ChartElement {
     /**
      * Sets the data tip items.
      * 
-     * @param collection the new data tip items
+     * @param collection
+     *            the new data tip items
      */
     private void setDataTipItems(ArrayCollection collection) {
         _setDataTipItems(collection.toArray().getJsObj());
@@ -94,7 +96,8 @@ public class Series extends ChartElement {
     /**
      * Sets the data tip items.
      * 
-     * @param items the new data tip items
+     * @param items
+     *            the new data tip items
      */
     private native void _setDataTipItems(JavaScriptObject items)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -114,7 +117,8 @@ public class Series extends ChartElement {
     /**
      * Sets the display name.
      * 
-     * @param value the new display name
+     * @param value
+     *            the new display name
      */
     public native void setDisplayName(String value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -134,7 +138,8 @@ public class Series extends ChartElement {
     /**
      * Sets the filter data.
      * 
-     * @param value the new filter data
+     * @param value
+     *            the new filter data
      */
     public native void setFilterData(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -154,7 +159,8 @@ public class Series extends ChartElement {
     /**
      * Sets the filter data values.
      * 
-     * @param value the new filter data values
+     * @param value
+     *            the new filter data values
      */
     public native void setFilterDataValues(String value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -174,7 +180,8 @@ public class Series extends ChartElement {
     /**
      * Sets the interactive.
      * 
-     * @param value the new interactive
+     * @param value
+     *            the new interactive
      */
     public native void setInteractive(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -214,7 +221,8 @@ public class Series extends ChartElement {
     /**
      * Sets the selectable.
      * 
-     * @param value the new selectable
+     * @param value
+     *            the new selectable
      */
     public native void setSelectable(boolean value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -234,7 +242,8 @@ public class Series extends ChartElement {
     /**
      * Sets the selected index.
      * 
-     * @param value the new selected index
+     * @param value
+     *            the new selected index
      */
     public native void setSelectedIndex(int value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -254,7 +263,8 @@ public class Series extends ChartElement {
     /**
      * Sets the selected indices.
      * 
-     * @param values the new selected indices
+     * @param values
+     *            the new selected indices
      */
     public native void setSelectedIndices(JsArrayInteger values)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -285,7 +295,8 @@ public class Series extends ChartElement {
     /**
      * Sets the selected items.
      * 
-     * @param items the new selected items
+     * @param items
+     *            the new selected items
      */
 
     public void setSelectedItems(ChartItem... items) {
@@ -309,13 +320,14 @@ public class Series extends ChartElement {
     public native ChartItem getSelectedItem()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getselectedItem();
-		return @com.emitrom.flash4j.flex.client.mx.charts.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.ChartItem::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
      * Sets the selected item.
      * 
-     * @param value the new selected item
+     * @param value
+     *            the new selected item
      */
     public native void setSelectedItem(ChartItem value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
@@ -326,7 +338,8 @@ public class Series extends ChartElement {
     /**
      * Gets the transition render data.
      * 
-     * @param <T> the generic type
+     * @param <T>
+     *            the generic type
      * @return the transition render data
      */
     public native <T> T getTransitionRenderData()/*-{
@@ -337,7 +350,8 @@ public class Series extends ChartElement {
     /**
      * Sets the transition render data.
      * 
-     * @param value the new transition render data
+     * @param value
+     *            the new transition render data
      */
     public native void setTransitionRenderData(Object value)/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();

@@ -39,7 +39,7 @@ public class Bridge extends JavaScriptObject {
     }-*/;
 
     private final native JavaScriptObject create(String id) /*-{
-		//ommiting to call the constructor of DisplayObjectContainer
+		//preventing from calling the constructor of DisplayObjectContainer
 		if (id != "flash.display.DisplayObjectContainer") {
 			return this.create(id);
 		}

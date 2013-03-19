@@ -17,7 +17,7 @@ package com.emitrom.flash4j.flex.ux.client.spark.components;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.core.client.toplevel.Date;
-import com.emitrom.flash4j.flex.client.spark.components.supportClasses.SkinnableComponent;
+import com.emitrom.flash4j.flex.client.ui.spark.SkinnableComponent;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**

@@ -1,25 +1,25 @@
 /************************************************************************
-  FileUpload.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * FileUpload.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 package com.emitrom.flash4j.flex.ux.client.mx.controls;
 
 import com.emitrom.flash4j.core.client.framework.Bridge;
-import com.emitrom.flash4j.flex.client.mx.containers.Panel;
-import com.emitrom.flash4j.flex.client.mx.controls.Button;
-import com.emitrom.flash4j.flex.client.mx.controls.DataGrid;
-import com.emitrom.flash4j.flex.client.mx.controls.ProgressBar;
+import com.emitrom.flash4j.flex.client.ui.mx.Button;
+import com.emitrom.flash4j.flex.client.ui.mx.DataGrid;
+import com.emitrom.flash4j.flex.client.ui.mx.Panel;
+import com.emitrom.flash4j.flex.client.ui.mx.ProgressBar;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
@@ -51,7 +51,7 @@ public class FileUpload extends Panel {
     public native DataGrid getFileGrid()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getlistFiles();
-		return @com.emitrom.flash4j.flex.client.mx.controls.DataGrid::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.DataGrid::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -62,7 +62,7 @@ public class FileUpload extends Panel {
     public native Button getAddButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getbtnAdd();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -73,7 +73,7 @@ public class FileUpload extends Panel {
     public native Button getRemoveButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getbtnRemove();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -84,7 +84,7 @@ public class FileUpload extends Panel {
     public native ProgressBar getProgressBar()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getprogBar();
-		return @com.emitrom.flash4j.flex.client.mx.controls.ProgressBar::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.ProgressBar::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -95,7 +95,7 @@ public class FileUpload extends Panel {
     public native Button getCancelButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getbtnCancel();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -106,7 +106,7 @@ public class FileUpload extends Panel {
     public native Button getUploadButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getbtnUpload();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**
@@ -117,7 +117,7 @@ public class FileUpload extends Panel {
     public native Button getViewButton()/*-{
 		var peer = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
 		var obj = peer.getbtnView();
-		return @com.emitrom.flash4j.flex.client.mx.controls.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
+		return @com.emitrom.flash4j.flex.client.ui.mx.Button::new(Lcom/google/gwt/core/client/JavaScriptObject;)(obj);
     }-*/;
 
     /**

@@ -15,68 +15,14 @@
  **************************************************************************/
 package com.emitrom.flash4j.app.client;
 
-import com.emitrom.flash4j.core.client.utils.Color;
-import com.emitrom.flash4j.flex.client.core.runtime.FLEX;
-import com.emitrom.flash4j.flex.client.mx.containers.Panel;
-import com.emitrom.flash4j.flex.client.mx.controls.DateChooser;
-import com.emitrom.flash4j.swf.client.StartHandler;
-import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.user.client.ui.RootPanel;
-import com.sencha.gxt.core.client.Style.HideMode;
-import com.sencha.gxt.core.client.util.Margins;
-import com.sencha.gxt.widget.core.client.ContentPanel;
-import com.sencha.gxt.widget.core.client.container.CenterLayoutContainer;
-import com.sencha.gxt.widget.core.client.container.HorizontalLayoutContainer;
-import com.sencha.gxt.widget.core.client.container.HorizontalLayoutContainer.HorizontalLayoutData;
+import com.emitrom.flash4j.flex.client.core.runtime.FlexEntryPoint;
+import com.emitrom.flash4j.flex.client.ui.spark.Application;
 
-public class Flash4j implements EntryPoint {
+public class Flash4j extends FlexEntryPoint {
 
     @Override
-    public void onModuleLoad() {
-
-        CenterLayoutContainer con = new CenterLayoutContainer();
-
-        ContentPanel panel = new ContentPanel();
-        panel.setHeadingText("GXT and Flex");
-        panel.setCollapsible(true);
-        panel.setHideMode(HideMode.OFFSETS);
-        panel.setPixelSize(600, 600);
-
-        HorizontalLayoutContainer c = new HorizontalLayoutContainer();
-        c.add(getContentPanel(), new HorizontalLayoutData(-1, 1, new Margins(4)));
-        c.add(getFlexContainer(), new HorizontalLayoutData(1, 1, new Margins(4, 0, 4, 0)));
-
-        panel.setWidget(c);
-        con.add(panel);
-
-        RootPanel.get().add(con);
+    public void onLoad() {
+        Application.get().addElement(new Flex());
     }
 
-    private ContentPanel getFlexContainer() {
-        ContentPanel panel = new ContentPanel();
-        panel.setHeaderVisible(false);
-        panel.add(FLEX.initAsWidget(new StartHandler() {
-            @Override
-            public void onStart() {
-                FLEX.getRootPanel().setStyle("backgroundColor", Color.GREEN.getValue());
-                Panel flexPanel = new Panel("Flex Panel");
-                flexPanel.setPercentSize(60, 60);
-                flexPanel.setCentered();
-
-                DateChooser dc = new DateChooser();
-                dc.setCentered();
-                flexPanel.addElement(dc);
-
-                FLEX.getRootPanel().addElement(flexPanel);
-            }
-        }));
-        return panel;
-    }
-
-    private ContentPanel getContentPanel() {
-        ContentPanel panel = new ContentPanel();
-        panel.setHeadingText("Left panel");
-        return panel;
-
-    }
 }

@@ -17,7 +17,7 @@
 package com.emitrom.flash4j.flex.client.core.runtime;
 
 import com.emitrom.flash4j.core.client.toplevel.Flash;
-import com.emitrom.flash4j.flex.client.spark.components.Application;
+import com.emitrom.flash4j.flex.client.ui.spark.Application;
 import com.emitrom.flash4j.swf.client.StartHandler;
 import com.emitrom.flash4j.swf.client.loader.SwfWidgetLoader;
 import com.google.gwt.core.client.GWT;
