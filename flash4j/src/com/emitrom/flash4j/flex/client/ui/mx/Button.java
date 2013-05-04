@@ -1,20 +1,22 @@
 /************************************************************************
-  Button.java is part of Flash4j 3.0.0  Copyright 2012 Emitrom LLC
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-**************************************************************************/
+ * Button.java is part of Flash4j 3.0.0 Copyright 2012 Emitrom LLC
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ * 
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ **************************************************************************/
 package com.emitrom.flash4j.flex.client.ui.mx;
 
+import com.emitrom.flash4j.core.client.events.CallbackRegistration;
+import com.emitrom.flash4j.core.client.events.handlers.ClickHandler;
 import com.emitrom.flash4j.core.client.framework.Bridge;
 import com.emitrom.flash4j.flex.client.core.utils.IconsUtil;
 import com.emitrom.flash4j.flex.client.mx.core.UIComponent;
@@ -271,5 +273,18 @@ public class Button extends UIComponent {
     public void setIcon(String iconPath, double iconWidth, double iconHeight) {
         setStyle("icon", IconsUtil.getClass(this, iconPath, iconWidth, iconHeight));
     }
+
+    public native CallbackRegistration addClickHandler(ClickHandler handler)/*-{
+		var jso = this.@com.emitrom.flash4j.core.client.ProxyObject::getJsObj()();
+		var listener = function(e) {
+			var eventObject = @com.emitrom.flash4j.core.client.events.ClickEvent::new(Lcom/google/gwt/core/client/JavaScriptObject;)(e);
+			handler.@com.emitrom.flash4j.core.client.events.handlers.ClickHandler::onClick(Lcom/emitrom/flash4j/core/client/events/ClickEvent;)(eventObject);
+		};
+		var name = @com.emitrom.flash4j.core.client.events.ClickEvent::EVENT_NAME;
+		jso.addEventListener(name, listener);
+		var toReturn = @com.emitrom.flash4j.core.client.events.CallbackRegistration::new(Lcom/emitrom/flash4j/core/client/display/DisplayObject;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(this,name,listener);
+		return toReturn;
+
+    }-*/;
 
 }
